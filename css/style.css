@@ -17,7 +17,7 @@ html {
 }
 
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   background-color: var(--bg);
   color: #fff;
 }
@@ -60,7 +60,7 @@ body {
 }
 
 .navbar .navbar-nav a::after {
-  content: '';
+  content: "";
   display: block;
   padding-bottom: 0.5rem;
   border-bottom: 0.1rem solid var(--primary);
@@ -120,6 +120,21 @@ body {
 }
 
 /* Shopping Cart */
+#shopping-cart button {
+  position: relative;
+}
+
+#shopping-cart-button .quantity-badge {
+  display: inline-block;
+  padding: 1px 5px;
+  background-color: red;
+  border-radius: 6px;
+  font-size: 0.8rem;
+  position: absolute;
+  top: 40px;
+  right: 130px;
+}
+
 .shopping-cart {
   position: absolute;
   top: 100%;
@@ -175,7 +190,7 @@ body {
   min-height: 100vh;
   display: flex;
   align-items: center;
-  background-image: url('../img/header-bg.jpeg');
+  background-image: url("../img/header-bg.jpeg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -196,12 +211,11 @@ body {
 
 .hero .mask-container {
   position: absolute;
-  /* background: salmon; */
   inset: 0;
-  -webkit-mask-image: url('../img/header-bg.svg');
-  -webkit-mask-repeat: no-repeat;
-  -webkit-mask-size: cover;
-  -webkit-mask-position: center;
+  mask-image: url("../img/header-bg.svg");
+  mask-repeat: no-repeat;
+  mask-size: cover;
+  mask-position: center;
 }
 
 .hero .content {
@@ -210,7 +224,7 @@ body {
   width: 100%;
   text-align: center;
   position: fixed;
-  top: 130px;
+  top: 180px;
 }
 
 .hero .content h1 {
@@ -278,10 +292,12 @@ body {
 
 .about .row .about-img img {
   width: 100%;
-  -webkit-mask-image: url('../img/menu/splash.svg');
+  -webkit-mask-image: url("../img/menu/circle.svg");
+  mask-image: url("../img/menu/circle.svg");
   -webkit-mask-size: 50%;
-  -webkit-mask-repeat: no-repeat;
+  mask-size: 50%;
   -webkit-mask-position: center;
+  mask-position: center;
 }
 
 .about .row .content {
@@ -322,6 +338,7 @@ body {
   flex-wrap: wrap;
   margin-top: 5rem;
   justify-content: center;
+  gap: 2rem;
 }
 
 .menu .row .menu-card {
@@ -400,12 +417,6 @@ body {
 .products .product-price {
   font-size: 1.3rem;
   font-weight: bold;
-}
-
-.products .product-price span {
-  text-decoration: line-through;
-  font-weight: lighter;
-  font-size: 1rem;
 }
 
 /* Contact Section */
@@ -512,7 +523,7 @@ footer .credit a {
   position: relative;
   background-color: #fefefe;
   color: var(--bg);
-  margin: 15% auto;
+  margin: 12% auto;
   padding: 1.2rem;
   border: 1px solid #666;
   width: 80%;
