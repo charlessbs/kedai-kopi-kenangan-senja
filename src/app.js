@@ -34,7 +34,7 @@ document.addEventListener("alpine:init", () => {
       {
         id: 6,
         name: "Paket CCTV Digital 16 Kamera",
-        img: "6.jpg",
+        img: "img/products/6.jpg",
         price: 1900,
       },
     ],
